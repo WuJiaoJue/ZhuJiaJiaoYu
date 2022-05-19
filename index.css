@@ -1,0 +1,339 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f1;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: dow; }
+.item7 { grid-area: say; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header'
+    'menu main main main main main right'
+    'menu main main main main main dow'
+    'menu main main main main main dow'
+    'menu main main main main main dow'
+    'menu main main main main main dow'
+    'menu main main main main main say'
+    'footer footer footer footer footer footer footer';
+    /*grid-gap: 10px;*/
+    /*background-color: rgba(243, 78, 79, 0.62);*/
+    /*padding: 5px;*/
+}
+
+.grid-container > div {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    /* padding: 20px 0; */
+    font-size: 30px;
+
+    box-sizing: border-box;
+}
+
+.item1{
+
+}
+/*评论区表格*/
+.item6 .panel-body table{
+    text-align: left;
+    color: #444
+}
+/*评论区表格行控制*/
+.item6 .panel-body table tr {
+    margin: 2px 0;
+    padding: 5px 0;
+    /*background-color: #92FE9D;*/
+    border-top: 1px solid #eee;
+    /*border-bottom: 1px solid #eee;*/
+
+}
+
+.item6 .panel-body table tr td .name{
+    text-align: left;
+    color: #333333;
+    font-size: 12px;
+    width: 100px;
+}
+
+.item6 .panel-body table tr td .pl{
+    text-align: left;
+    color: #666;
+    font-size: 10px;
+    width: 100px;
+}
+
+.item6 .panel-body table td{
+    margin: 2px 0;
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    font-size: 10px;
+    /*width: 40px;*/
+}
+
+
+
+.grid-container .item7{
+    padding: 0;
+}
+
+.fbpl{
+    text-align: left;
+}
+
+.item7 label{
+    font-size: 15px;
+}
+
+.btl{
+    text-align: left;
+}
+
+.btl p{
+    font-size: 17px;
+    padding: 0;
+    margin: 0 0 0 5%;
+}
+
+.logo{
+    padding: 0;
+    margin-left: 5%;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.btl p{
+    margin: 10px 0;
+    padding: 10px;
+    float: left;
+    color: #ef3a3b;
+    /*background-color: #ef3a3b;*/
+    /*border-radius: 5px;*/
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+.grid-container .item1{
+    padding: 0;
+}
+
+.grid-container .item5 .footer h3{
+    margin: 0;
+}
+
+.item1{
+    border-bottom: 3px solid #ef3a3b;
+    margin-bottom:20px;
+}
+
+.item4,.item6,.item7{
+    border-left:1px solid #ccc;
+}
+
+.item7 .fbpl{
+    border-top: 1px solid #ccc;
+    /*text-align: right;*/
+    box-sizing: border-box;
+    /*width: 170px;*/
+    /* box-sizing: border-box; */
+}
+
+.item5{
+    border-top:2px solid #cb1c1c;
+    color: white;
+    margin-top: 80px;
+}
+
+.grid-container .item5{
+    background-color: #ed3a3c;
+}
+
+.footer{
+    font-size: 15px;
+    height: 80px;
+}
+
+.item3{
+    /* margin-right: 10px; */
+    /*width: 100%;*/
+}
+
+.grid-container .item6{
+    /* background-color: #efefef; */
+    color: black;
+    /*border-radius: 15px;*/
+}
+
+
+
+input[type=text]{
+    /*background-color: #eee;*/
+    margin-left: 10px;
+    border: 1px solid #ef3a3b;
+    /*float: right;*/
+    outline: 1px solid #ef3a3b;
+    border-radius: 5px;
+    width: 70%;
+}
+
+#loading-btn {
+    border: none;
+    /* align-items: center; */
+    /*justify-content: center;*/
+    background-color: #ef3a3b;
+    color: white;
+    /* border-radius: 5px; */
+    /* font-size: 14px; */
+    /*float: left;*/
+    /* height: 100vh; */
+}
+
+td.name {
+    font-weight: bolder;
+}
+
+td.pl {
+    word-break: break-all;
+}
+
+.pl .sp{
+    max-width: 260px;
+}
+
+#panel-body{
+    width: 300px;
+}
+
+.grid-container .item7{
+    box-sizing: border-box;
+    border-bottom-right-radius: 7px;
+}
+
+.item4, #teacherVideo{
+    border-top-right-radius:7px;
+}
+
+.item2, #mainVideo{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+/* From uiverse.io by @adamgiebl */
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ed3a3c;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ed3a3c;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #ed3a3c;
+}
+
+button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #ed3a3c;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#login{
+    margin-right: 14%;
+    float: right;
+}
+
+/* From uiverse.io by @adamgiebl */
+#loading-btn {
+    font-family: inherit;
+    font-size: 10px;
+    padding: 0.7em 1em 0.7em 0.9em;
+    align-items: stretch;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    flex-direction: row;flex-wrap: nowrap;align-content: flex-end;
+}
+
+#loading-btn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+#loading-btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#loading-btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+#loading-btn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+#loading-btn:hover span {
+    transform: translateX(5em);
+}
+
+#loading-btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+li {
+    margin: 20px 0;
+    list-style-type: none;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #ed3a3c;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: #ed3a3c;
+    color: white;
+    border-radius: 7px;
+}
+
+.item7 {
+    max-width: 100%;
+}

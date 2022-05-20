@@ -173,12 +173,21 @@ td.pl {
 /*右侧 网格区*/
 .item4,.item6,.item7{
     border-left:1px solid #ccc;
+    /*width: 100px;*/
 }
 
 /*教师视频*/
 .item4, #teacherVideo{
     border-top-right-radius:7px;
 }
+.grid-container .item4{
+    background-color: #ed3a3c;
+    color: white;
+    height: 140px;
+    text-align: center;
+    /*margin: auto;*/
+}
+
 /*课程视频*/
 .item2, #mainVideo{
     border-top-left-radius: 7px;

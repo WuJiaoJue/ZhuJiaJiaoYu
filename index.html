@@ -4,39 +4,70 @@
     <meta charset="UTF-8">
     <title>助嘉教育</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="loing.css">
 </head>
 <body>
-
+<!--网格布局-->
 <div class="grid-container">
+    <!--标题栏-->
     <div class="item1">
         <div class="btl">
             <a href="https://jibuzhumima.github.io/ZJJYW/">
-            <img src="img.png" class="logo">
+            <img src="img.png" class="logo" alt="助嘉">
             <p>助嘉教育</p>
             </a>
             <a href="#">
                 <button id="login">登录</button>
             </a>
+
+            <!-- 弹窗 -->
+            <div id="myModal" class="modal">
+                <form class="form card">
+                    <div class="card_header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor" d="M4 15h2v5h12V4H6v5H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6zm6-4V8l5 4-5 4v-3H2v-2h8z"></path>
+                        </svg>
+                        <h1 class="form_heading">登 录</h1>
+                        <span class="form_heading close">x</span>
+                    </div>
+                    <div class="field">
+                        <label for="username">账 号</label>
+                        <input class="input" name="username" type="text" placeholder="请输入账号..." id="username">
+                    </div>
+                    <div class="field">
+                        <label for="password">密 码</label>
+                        <input class="input" name="user_password" type="password" placeholder="请输入密码..." id="password">
+                    </div>
+                    <div class="field">
+                        <button class="button">确认登录</button>
+                    </div>
+                </form>
+            </div>
+
             <li><a href="#about">下载应用</a></li>
             <li><a href="#contact">社区</a></li>
             <li><a href="#news">选课中心</a></li>
             <li><a class="active" href="https://jibuzhumima.github.io/ZJJYW/">首页</a></li>
         </div>
     </div>
-
+    <!--左侧留白-->
     <div class="item2">
         <p>&nbsp;&nbsp;&nbsp;
         </p>
     </div>
+    <!--右侧留白-->
     <div class="item8">
         <p>&nbsp;&nbsp;&nbsp;
         </p>
     </div>
+    <!--主题视频-->
     <div class="item3">
         <video id="mainVideo" width="100%" controls onplay="playAll()" onpause="pauseAll()">
             <source src="mainVideo.mp4" type="video/mp4">
         </video>
     </div>
+    <!--教师视频/课程信息-->
     <div class="item4">
 <!--        <video id="teacherVideo" width="100%" >-->
 <!--            <source src="teacherVideo.mp4" type="video/mp4">-->
@@ -44,6 +75,7 @@
 <!--        <img id="teacherVideo" src="teacherVideo.png" alt="课程信息">-->
         <p id="teacherVideo">助嘉教育</p>
     </div>
+    <!--评论区-->
     <div class="item6">
         <div class="panel-body" style="height: 465px; overflow-y:scroll;overflow-x:hidden">
             <table id="plq">
@@ -59,6 +91,7 @@
             </table>
         </div>
     </div>
+    <!--页脚-->
     <div class="item5">
         <div class="footer">
             <p>助嘉教育</p>
@@ -67,6 +100,7 @@
             <h5>New Education, New World</h5>
         </div>
     </div>
+    <!--发表评论-->
     <div class="item7">
         <div class="fbpl">
             <input id="say" type="text" name="text" placeholder="发表评论" class="input" required="">
@@ -76,6 +110,6 @@
 </div>
 
 <script src="index.js"></script>
-
+<script src="loing.js"></script>
 </body>
 </html>

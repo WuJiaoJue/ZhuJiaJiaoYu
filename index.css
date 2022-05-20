@@ -148,13 +148,15 @@ li a:hover {
     color: black;
 }
 /*评论区输入框*/
-input[type=text]{
+.item6 input[type=text]{
     margin: 10px 0 10px 10px;
     border: 1px solid #ef3a3b;
     outline: 1px solid #ef3a3b;
     border-radius: 5px;
-    width: 70%;
     height: 20px;
+}
+input#say {
+    width: 70%;
 }
 /*姓名*/
 td.name {
@@ -163,6 +165,7 @@ td.name {
 /*评论*/
 td.pl {
     word-break: break-all;
+    max-width: 140px;
 }
 /*评论div*/
 .grid-container .item7{

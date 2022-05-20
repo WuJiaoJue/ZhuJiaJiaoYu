@@ -15,20 +15,20 @@ div{
 .item5 { grid-area: footer; }
 .item6 { grid-area: dow; }
 .item7 { grid-area: say; }
+.item8 { grid-area: rair; }
 
 .grid-container {
     display: grid;
     grid-template-areas:
-    'header header header header header header header'
-    'menu main main main main main right'
-    'menu main main main main main dow'
-    'menu main main main main main dow'
-    'menu main main main main main dow'
-    'menu main main main main main dow'
-    'menu main main main main main say'
-    'footer footer footer footer footer footer footer';
+    'header header header header header header header header'
+    'menu main main main main main right rair'
+    'menu main main main main main dow rair'
+    'menu main main main main main dow rair'
+    'menu main main main main main dow rair'
+    'menu main main main main main dow rair'
+    'menu main main main main main say rair'
+    'footer footer footer footer footer footer footer footer';
     /*grid-gap: 10px;*/
-    /*background-color: rgba(243, 78, 79, 0.62);*/
     /*padding: 5px;*/
 }
 
@@ -41,10 +41,64 @@ div{
 
     box-sizing: border-box;
 }
-
-.item1{
-
+/*-------------------标题栏---------------------*/
+/*标题栏*/
+.btl{
+    text-align: left;
 }
+/*企业logo*/
+.logo{
+    padding: 0;
+    margin-left: 5%;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+/*企业名字： 助嘉教育*/
+.btl p{
+    margin: 10px 0;
+    padding: 10px;
+    float: left;
+    color: #ef3a3b;
+    font-size: 30px;
+    font-weight:bolder;
+}
+/*标题栏 网格*/
+.grid-container .item1{
+    padding: 0;
+
+    border-bottom: 3px solid #ef3a3b;
+    margin-bottom:20px;
+}
+/*登录按钮*/
+#loading-btn {
+    border: none;
+    background-color: #ef3a3b;
+    color: white;
+}
+/*水平导航栏li*/
+li {
+    margin: 20px 0;
+    list-style-type: none;
+    float: right;
+}
+/*水平导航栏链接a*/
+li a {
+    display: block;
+    color: #ed3a3c;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: #ed3a3c;
+    color: white;
+    border-radius: 7px;
+}
+/*---------------------------------------------*/
+/*--------------------评论区--------------------*/
 /*评论区表格*/
 .item6 .panel-body table{
     text-align: left;
@@ -54,177 +108,78 @@ div{
 .item6 .panel-body table tr {
     margin: 2px 0;
     padding: 5px 0;
-    /*background-color: #92FE9D;*/
     border-top: 1px solid #eee;
-    /*border-bottom: 1px solid #eee;*/
-
 }
-
+/*评论区姓名栏*/
 .item6 .panel-body table tr td .name{
     text-align: left;
     color: #333333;
     font-size: 12px;
     width: 100px;
 }
-
+/*评论区评论栏*/
 .item6 .panel-body table tr td .pl{
     text-align: left;
     color: #666;
     font-size: 10px;
     width: 100px;
 }
-
+/*评论区姓名、评论栏*/
 .item6 .panel-body table td{
     margin: 2px 0;
     padding: 5px 0;
     border-top: 1px solid #ccc;
     font-size: 10px;
-    /*width: 40px;*/
 }
+/*---------------发表评论...---------------*/
+/*发表评论div*/
+.item7 .fbpl{
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
 
-
-
-.grid-container .item7{
-    padding: 0;
-}
-
-.fbpl{
     text-align: left;
 }
-
+/*发表评论输入框*/
 .item7 label{
     font-size: 15px;
 }
-
-.btl{
-    text-align: left;
-}
-
-.btl p{
-    font-size: 17px;
-    padding: 0;
-    margin: 0 0 0 5%;
-}
-
-.logo{
-    padding: 0;
-    margin-left: 5%;
-    width: 80px;
-    height: 80px;
-    float: left;
-}
-
-.btl p{
-    margin: 10px 0;
-    padding: 10px;
-    float: left;
-    color: #ef3a3b;
-    /*background-color: #ef3a3b;*/
-    /*border-radius: 5px;*/
-    font-size: 30px;
-    font-weight:bolder;
-}
-
-.grid-container .item1{
-    padding: 0;
-}
-
-.grid-container .item5 .footer h3{
-    margin: 0;
-}
-
-.item1{
-    border-bottom: 3px solid #ef3a3b;
-    margin-bottom:20px;
-}
-
-.item4,.item6,.item7{
-    border-left:1px solid #ccc;
-}
-
-.item7 .fbpl{
-    border-top: 1px solid #ccc;
-    /*text-align: right;*/
-    box-sizing: border-box;
-    /*width: 170px;*/
-    /* box-sizing: border-box; */
-}
-
-.item5{
-    border-top:2px solid #cb1c1c;
-    color: white;
-    margin-top: 80px;
-}
-
-.grid-container .item5{
-    background-color: #ed3a3c;
-}
-
-.footer{
-    font-size: 15px;
-    height: 80px;
-}
-
-.item3{
-    /* margin-right: 10px; */
-    /*width: 100%;*/
-}
-
+/*评论区表格区*/
 .grid-container .item6{
-    /* background-color: #efefef; */
     color: black;
-    /*border-radius: 15px;*/
 }
-
-
-
+/*评论区输入框*/
 input[type=text]{
-    /*background-color: #eee;*/
-    margin-left: 10px;
+    margin: 10px 0 10px 10px;
     border: 1px solid #ef3a3b;
-    /*float: right;*/
     outline: 1px solid #ef3a3b;
     border-radius: 5px;
     width: 70%;
+    height: 20px;
 }
-
-#loading-btn {
-    border: none;
-    /* align-items: center; */
-    /*justify-content: center;*/
-    background-color: #ef3a3b;
-    color: white;
-    /* border-radius: 5px; */
-    /* font-size: 14px; */
-    /*float: left;*/
-    /* height: 100vh; */
-}
-
+/*姓名*/
 td.name {
     font-weight: bolder;
 }
-
+/*评论*/
 td.pl {
     word-break: break-all;
 }
-
-.pl .sp{
-    max-width: 260px;
-}
-
-#panel-body{
-    width: 300px;
-}
-
+/*评论div*/
 .grid-container .item7{
     box-sizing: border-box;
     border-bottom-right-radius: 7px;
 }
+/*------------------------------------------------*/
+/*右侧 网格区*/
+.item4,.item6,.item7{
+    border-left:1px solid #ccc;
+}
 
+/*教师视频*/
 .item4, #teacherVideo{
     border-top-right-radius:7px;
 }
-
+/*课程视频*/
 .item2, #mainVideo{
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -313,27 +268,28 @@ button:active {
     }
 }
 
-li {
-    margin: 20px 0;
-    list-style-type: none;
-    float: right;
+/*------------------页脚--------------------*/
+/*页脚 标语*/
+.grid-container .item5 .footer h2,h5{
+    margin: 0;
 }
-
-li a {
-    display: block;
-    color: #ed3a3c;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-li a:hover {
+/*页脚 网格区*/
+.grid-container .item5{
     background-color: #ed3a3c;
+
+    border-top:2px solid #cb1c1c;
     color: white;
-    border-radius: 7px;
+    margin-top: 80px;
+}
+/*页脚div*/
+.footer{
+    font-size: 15px;
+    height: 120px;
+}
+/*页脚 链接*/
+.footer a{
+    text-decoration: none;
+    display: block;
+    color: white;
 }
 
-.item7 {
-    max-width: 100%;
-}
